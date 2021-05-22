@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/header,footer.css" rel="stylesheet">
+	<link href="../css/service.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+		<p>이벤트</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+		<section class="modalEvent">
+			<div><img src="../img/modal1.jpg"/></div>
+			<div><img src="../img/modal2.jpg"/></div>
+			<div><img src="../img/modal3.jpg"/></div>
+			<div><img src="../img/modal4.jpg"/></div>
+		</section>
+	  </div>
+    </div>
+  </div>
+</div>
+<script>
+	$('.modalEvent').slick({
+		slide:'div',
+		slidesToShow:1,
+		slidesToScroll:1,
+		autoplay:true,
+		autoplaySpeed:5000,
+		infinite:true,
+		pauseOnHover:true,
+		arrows : true,
+		prevArrow : "<i class='fas fa-arrow-left' style='position: absolute; top: 135px; left: 0; z-index: 1; cursor: pointer;'></i>",		// 이전 화살표 모양 설정
+		nextArrow : "<i class='fas fa-arrow-right' style='position: absolute; top: 135px; right: 0; z-index: 1; cursor: pointer;'></i>"		// 다음 화살표 모양 설정
+	});
+</script>
+
+<nav class="navbar navbar-default topfixed toptop">
+	<div class="container-fluid topfixed">
+		<div class="collapse navbar-collapse topfixed" id="bs-example-navbar-collapse-1" style="height : 0px !important;">
+			<ul class="topmenu">
+				<li onclick="location.href='../index.html'"><a><img src="../img/logo.png" id="logoimg"></a></li>
+				<ul>
+					<li id="menuborder">관광명소
+						<ul class="slidebar">
+							<li><a href="../attractions/domestic.html">국내코스</a></li>
+							<li><a href="../attractions/overseas.html">해외코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">축제 / 행사
+						<ul class="slidebar">
+							<li><a href="../festival/progressfestival.html">진행중인 축제,행사</a></li>
+							<li><a href="../festival/intendedfestival.html">예정된 축제,행사</a></li>
+							<li><a href="../festival/Pushevent.html">추천코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">숙박 / 음식
+						<ul class="slidebar">
+							<li><a href="../hotel_food/hotel.html">호텔</a></li>
+							<li><a href="../hotel_food/other.html">그 외 숙박업소</a></li>
+							<li><a href="../hotel_food/Food.html">음식</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">고객센터
+						<ul class="slidebar">
+							<li><a href="../service/notice.html">공지사항</a></li>
+							<li><a href="../service/ptp.html">1:1문의</a></li>
+							<li><a href="../service/check.html">개인정보수정</a></li>
+							<li><a href="../index.html">로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<div class="container menufixed">
+	<ul>
+		<li class="abc" data-toggle="modal" data-target="#myModal">이<br><br><br>벤<br><br><br>트</li>
+		<li><i class="fab fa-youtube" onclick="location.href='https://www.youtube.com'"></i></li>
+		<li><i class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com/'"></i></li>
+	</ul>
+</div>
+
+<!-- ------------------------------------------header&fixed------------------------------------------ -->
+
+
+<!-- ------------------------------------------content start------------------------------------------ -->
+<div class="container containerbox">
+	<div class="leftcontent">
+		<div class="list-group">
+			<a class="list-group-item active">고객센터</a>
+			<a href="notice.html" class="list-group-item">공지사항</a>
+			<a href="ptp.html" class="list-group-item">1:1문의</a>
+			<a href="check.html" class="list-group-item">개인정보수정</a>
+			<a href="admin.html" class="list-group-item">관리자</a>
+		</div>
+	</div>
+
+	<div class="rightcontent">
+		<ol class="breadcrumb">
+			<li><a href="#">고객센터</a></li>
+			<li class="active">공지사항</li>
+		</ol>
+		
+		<h1>공지사항</h1>
+		<form method="post" action="">
+				
+			<div class="selectbox">
+				<select>
+					<option>제목</option>
+					<option>내용</option>
+				</select>
+				<input type="text" size="10" maxlength="10" style="height : 22px; text-align : left;">
+				<button type="button" class="btn btn-default write" onClick="location.href='../service/notice.html'">검색</button>
+			</div>
+				
+			<table class="table table-hover noticetable">
+				<colgroup>
+					<col width="10%" />
+					<col width="*%" />
+					<col width="10%" />
+					<col width="15%" />
+					<col width="10%" />
+				</colgroup>
+				
+				<thead>
+					<th><p>번호</p></th>
+					<th><p>제목</p></th>
+					<th><p>작성자</p></th>
+					<th><p>작성일</p></th>
+					<th><p>조회수</p></th>
+				</thead>
+					
+				<tbody>
+					<tr>
+						<td>10</td>
+						<td><a href="noticeview.html">3월 6일(토) 광화문광장 조성 공사 관련 교통체계 변...</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>10</td>
+					</tr>
+					
+					<tr>
+						<td>9</td>
+						<td><a href="noticeview.html">2021년 설 연휴 전통시장 한시적 주차허용 관련 공지</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>9</td>
+					</tr>
+					
+					<tr>
+						<td>8</td>
+						<td><a href="noticeview.html">로보카폴리와 함께 하는 교통안전이야기</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>8</td>
+					</tr>
+					
+					<tr>
+						<td>7</td>
+						<td><a href="noticeview.html">월드컵대교 강교가설로 인한 올림픽대로 통제</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>7</td>
+					</tr>
+					
+					<tr>
+						<td>6</td>
+						<td><a href="noticeview.html">8월 15일 (토) 집회 및 행진</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>6</td>
+					</tr>
+					
+					<tr>
+						<td>5</td>
+						<td><a href="noticeview.html">세종대로 도로재편 공사 (2020.8.18~12.19)</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>5</td>
+					</tr>
+					
+					<tr>
+						<td>4</td>
+						<td><a href="noticeview.html">교통경찰관과 함께 하는 어린이 교통안전교육 [사례]</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>4</td>
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td><a href="noticeview.html">교통경찰관과 함께 하는 어린이 교통안전교육 [기초]</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>3</td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td><a href="noticeview.html">전통시장주변 주차허용구간 안내</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>2</td>
+					</tr>
+					
+					<tr>
+						<td>1</td>
+						<td><a href="noticeview.html">교통경찰관과 함께 하는 어린이 교통안전교육 [심화]</a></td>
+						<td>관리자</td>
+						<td>2021-03-14</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+				
+			<div class="totalpage">
+				<p>Total 100 page1/10</p>
+			</div>
+			
+			<div class="btn-group writebutton" role="group" aria-label="...">
+				<button type="button" class="btn btn-default" onClick="location.href='noticewrite.html'">글쓰기</button>
+			</div>
+				
+				
+			<div class="pagenation">
+				<nav>
+				  <ul class="pagination">
+					<li>
+					  <a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					  </a>
+					</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li>
+					  <a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					  </a>
+					</li>
+				  </ul>
+				</nav>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- ------------------------------------------content end------------------------------------------ -->
+
+<!-- ------------------------------------------footer------------------------------------------ -->
+<div class="footer">
+	<div class="footertop">
+		<ul>
+			<li>이용약관</li>
+			<li>개인정보처리방침</li>
+			<li>여행약관</li>
+			<li>이메일주소 무단수집 거부</li>
+			<li>다이렉트 결제</li>
+			<li><i class="fab fa-facebook-square"></i></li>
+			<li><i class="fab fa-twitter-square"></i></li>
+			<li><i class="fab fa-goodreads"></i></li>
+		</ul>
+	</div>
+	
+	<div style="width : 1280px;">
+		<div><img class="bottomimg" src="../img/logo.png"></div>
+		<div class="bottomcontent">
+			<h4>Tourism 관광여행사 NEW WORLD TRAVEL</h4>
+			<p>대표자 CEO : 최영제 ㅣ 현지주소 : 3901 Old Seward Hwy, Suite 12-A Anchorage, 대전 99503</p>
+			<p>전화번호 : 044)444-4444 ㅣ 팩스번호 : 044)444-4444 ㅣ 이메일 주소 : cke6658@gmail.com</p>
+			<p>Business Licence: LN#435608 Tourism 122269</p>
+		</div>
+	</div>
+	
+</div>
+
+<script>
+
+$('.topmenu > ul').hover(function(){
+	$('.topmenu > ul').css("height","300px");
+	$('.topmenu > ul').css("background","#fff");
+	$('.topmenu > ul > li').css("color", "#222");
+	$('.slidebar').css("display","block");
+	
+$('.topmenu > ul > #menuborder').hover(function(){
+	$(this).css("border-bottom", "5px solid #36f");
+},function(){
+	$(this).css("border-bottom", "none");
+});
+
+$(".slidebar > li > a").hover(function(){
+	$(this).css("background", "#e6e6e6");
+	$(this).css("color", "#36f");
+	}, function(){
+	$(this).css("color", "#222");
+	$(this).css("background", "none");
+});
+
+}, function(){
+	$(".topmenu > ul").css("background", "#337ab7")
+	$('.topmenu > ul > li').css("color", "#fff");
+	$('.slidebar').css("display","none");
+	$('.topmenu > ul').css("height","100px");
+});
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="../fullPage.js-2.9.7/jquery.fullPage.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/header,footer.css" rel="stylesheet">
+	<link href="../css/attractions.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+		<p>이벤트</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+		<section class="modalEvent">
+			<div><img src="../img/modal1.jpg"/></div>
+			<div><img src="../img/modal2.jpg"/></div>
+			<div><img src="../img/modal3.jpg"/></div>
+			<div><img src="../img/modal4.jpg"/></div>
+		</section>
+	  </div>	
+    </div>
+  </div>
+</div>
+<script>
+	$('.modalEvent').slick({
+		slide:'div',
+		slidesToShow:1,
+		slidesToScroll:1,
+		autoplay:true,
+		autoplaySpeed:5000,
+		infinite:true,
+		pauseOnHover:true,
+		arrows : true,
+		prevArrow : "<i class='fas fa-arrow-left' style='position: absolute; top: 135px; left: 0; z-index: 1; cursor: pointer;'></i>",		// 이전 화살표 모양 설정
+		nextArrow : "<i class='fas fa-arrow-right' style='position: absolute; top: 135px; right: 0; z-index: 1; cursor: pointer;'></i>"		// 다음 화살표 모양 설정
+	});
+</script>
+
+<nav class="navbar navbar-default topfixed toptop">
+	<div class="container-fluid topfixed">
+		<div class="collapse navbar-collapse topfixed" id="bs-example-navbar-collapse-1" style="height : 0px !important;">
+			<ul class="topmenu">
+				<li onclick="location.href='../index.html'"><a><img src="../img/logo.png" id="logoimg"></a></li>
+				<ul>
+					<li id="menuborder">관광명소
+						<ul class="slidebar">
+							<li><a href="../attractions/domestic.html">국내코스</a></li>
+							<li><a href="../attractions/overseas.html">해외코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">축제 / 행사
+						<ul class="slidebar">
+							<li><a href="../festival/progressfestival.html">진행중인 축제,행사</a></li>
+							<li><a href="../festival/intendedfestival.html">예정된 축제,행사</a></li>
+							<li><a href="../festival/recommendation.html">추천코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">숙박 / 음식
+						<ul class="slidebar">
+							<li><a href="../hotel_food/hotel.html">호텔</a></li>
+							<li><a href="../hotel_food/other.html">그 외 숙박업소</a></li>
+							<li><a href="../hotel_food/Food.html">음식</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">고객센터
+						<ul class="slidebar">
+							<li><a href="../service/notice.html">공지사항</a></li>
+							<li><a href="../service/ptp.html">1:1문의</a></li>
+							<li><a href="../service/check.html">개인정보수정</a></li>
+							<li><a href="../index.html">로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<div class="container menufixed">
+	<ul>
+		<li class="abc" data-toggle="modal" data-target="#myModal">이<br><br><br>벤<br><br><br>트</li>
+		<li><i class="fab fa-youtube" onclick="location.href='https://www.youtube.com'"></i></li>
+		<li><i class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com/'"></i></li>
+	</ul>
+</div>
+
+<!-- ------------------------------------------header&fixed------------------------------------------ -->
+
+
+<!-- ------------------------------------------content start------------------------------------------ -->
+<div class="container containerbox">
+	<div class="leftcontent">
+		<div class="list-group">
+			<a class="list-group-item active">관광명소</a>
+			<a href="domestic.html" class="list-group-item">국내코스</a>
+			<a href="overseas.html" class="list-group-item">해외코스</a>
+		</div>
+	</div>
+
+	<div class="rightcontent">
+		<ol class="breadcrumb">
+			<li><a href="#">관광명소</a></li>
+			<li class="active">국내코스</li>
+		</ol>
+		
+		<h1>국내코스</h1>
+		<div>
+			<div class="imgbox" style="border : 1px solid black">
+				<img src="../img/img6_re.jpg"/>
+				<input type="file"/>
+			</div>
+			<table id="write">
+				<colgroup>
+					<col width="16%" />
+					<col width="*%" />
+					<col width="15%" />
+					<col width="30%" />
+				</colgroup>
+				<tr>
+					<td colspan="4">
+						<p>알래스카 고품격 V.I.P 투어</p>
+						<p>알래스카에서 최고의 여행을! True Luxury Experience! 5성급 숙박 및 차별화된 여행</p>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>상품가격 : </td>
+					<td colspan="3"><input type="text" value="한국출발[성인 1인]:244,000"></td>
+				</tr>
+				
+				<tr>
+					<td>여행기간 : </td>
+					<td><input type="text" value="2박 3일"></td>
+					<td>예약인원 : </td>
+					<td><input type="text" value="정원 15명(최소 4명출발)"></td>
+				</tr>
+				
+				<tr>
+					<td>여행지역 : </td>
+					<td colspan="3"><input type="text" value="앵커리지,거드우드,스워드,마타누스카 빙하,크닉빙하,타키티나 등"></td>
+				</tr>
+				
+				<tr>
+					<td>이용교통 : </td>
+					<td colspan="3"><input type="text" value="전용차량"></td>
+				</tr>
+				
+				<tr>
+					<td>포함내역 : </td>
+					<td colspan="3">
+						<textarea cols="62" rows="5">
+[교통] 왕복 항공권, 전용 차량비
+[제세금] 유류할증료, 항공/현지 TAX
+[숙박] 5성급 호텔,리조트,랏지 숙박
+[식사] 식사비
+[관광] 빙하유람선, 관광지 입장료
+[그 외]
+						</textarea>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>불포함내역 : </td>
+					<td colspan="3">
+						<textarea cols="62" rows="3">
+[개인 여행경비] 선택관광, 음료 및 주류, 자유시간 시 개인비용 등
+[각종 매너팁] 가이드&드라이버팁, 식사팁, 포터, 테이블팁 등
+						</textarea>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>출발지역 : </td>
+					<td colspan="3">
+						<select>
+							<option>[인천 국제공항]</option>
+							<option>[김포 국제공항]</option>
+							<option>[제주 국제공항]</option>
+							<option checked>[청주 국제공항]</option>
+							<option>[대구 국제공항]</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="4">
+						<textarea cols="80" rows="5" placeholder="일정을 등록해주세요"></textarea>
+					</td>
+				</tr>
+			</table>
+			<div role="tabpanel" style="margin-bottom : 20px;">
+			  <ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active col-md-3 tabstyle"><a href="#Introduction" aria-controls="Introduction" role="tab" data-toggle="tab">상품소개</a></li>
+				<li role="presentation" class="col-md-3 tabstyle"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">상품내역</a></li>
+				<li role="presentation" class="col-md-3 tabstyle"><a href="#schedule" aria-controls="schedule" role="tab" data-toggle="tab">세부일정</a></li>
+				<li role="presentation" class="col-md-3 tabstyle"><a href="#TouristMap" aria-controls="TouristMap" role="tab" data-toggle="tab">참고사항</a></li>
+			  </ul>
+
+			  <div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="Introduction">
+					<textarea style="width : 100%; text-align : left;" rows="10" placeholder="상품소개를 입력해주세요"></textarea>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="details">
+					<textarea style="width : 100%; text-align : left;" rows="10" placeholder="상품내역을 입력해주세요"></textarea>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="schedule">
+					<div style="background : #f2f2f2;">
+						<h3><input type="text" placeholder="제목을 입력해주세요" value="지중해 1일차 - 시애틀 or밴쿠버 메릿 레벨스톡" style="width : 100%; height : 30px; text-align : left;"></h3>
+					</div>
+					<textarea style="width : 100%; text-align : left;" rows="10" placeholder="세부일정을 입력해주세요">
+호텔 : Coast HillCrest Hotel Revelstoke 또는 동급 식사 : 중식 , 석식
+*록키 투어 하이라이트*
+1. 블랙곰들의 놀이터 호프
+2. 캐나다 서부 록키의 지맥인 코키할라 고개
+3. 컨츄리 뮤직의 중심지 메릿과 두 개의 톰슨 강이 합류하는 캠룹스
+4. 캐나다 태평양 철도 회사의 본거지 레벨스톡
+▶ 미팅장소 집결, 가이드 미팅
+▶ UNESCO 지정 세계문화 유산 중 하나이며, 길이 약 1,500km, 너비 약 80km인 록키산맥을 향해 출발
+▶ 전형적인 캐나다의 농촌 풍경을 감상하며 대표적인 농업지역인칠리왁을 경유
+▶ 희망의 도시이자 Gold Rush의 거점 도시였던호프에서 중식
+▶ BC 주 남동 중심을 가로지르는 코키할라 하이웨이를 따라 준 사막지역이며 컨츄리 음악의 향기를 느낄 수 있는메릿경유
+▶ 목재의 도시이자 내륙교통의 중심지인캠룹스경유
+▶ BC 남부 내륙의 Shuswap Lake가 감싸고 있는 호반의 도시살몬암, 시카무스경유
+▶ 캐나다 대륙 횡단 철도의 주요 완성지라스트 스파이크경유
+▶ 주요 정차 도시인레벨스톡도착하여 석식 및 호텔 투숙
+					</textarea>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="TouristMap">
+					<textarea style="width : 100%; text-align : left;" rows="10" placeholder="참고사항을 입력해주세요">
+■참고 사항
+-최소 출발 인원은2명 부터 확정입니다.
+-본 상품은 성인2인1실 사용 기준의 요금 입니다. (1인1실 사용시 싱글차지 발생)
+-여권의 유효기간이 6개월 이상 남아있어야 합니다.
+-상기 일정은 항공 및 현지 사정에 의하여 변동 될 수 있습니다.
+-일정표에 명시된 호텔은 예정으로,현지 사정상 동급의 다른 호텔로 변경 될 수 있습니다.
+-급격한 환율 변동에 따라 상품가가 변동 될 수 있습니다.
+-세면도구 및 슬리퍼가 비치되지 않은 경우가 있으니 개별 준비 부탁드립니다.
+
+■상품약관
+- 본 상품의 예약과 취소는‘국외여행 특별약관’이 적용됨을 알려드립니다.
+
+▶특별약관 안내
+1)계약금 규정
+본 상품은 계약 청약 후 예약시 안내드린 요금을 기한 내에 납입하셔야 예약이 확정 됩니다.
+위 예약금은 호텔,항공,현지 사정 등에 의하여 변경될 수 있으며,상황에 따라 고객님의 결제시한은 당겨질 수 있습니다.
+단,아래 명시되어 있는 취소료 규정 적용기간에 예약하신 고객님께서는 계약금보다 취소 수수료가 높을 시 취소 수수료 금액을 계약금으로 납부하실 수도 있습니다.
+2)취소료 및 예약변경료 규정
+본 상품의 예약과 취소는 취소시점에 관계없이‘국외여행 표준약관’외에‘국외여행 특별약관’이 추가로 적용됨을 알려드립니다.
+예약시 신중하게 검토하시기 바랍니다.
+
+▶취소료 규정
+1)여행자의 여행 계약 해지 요청이 있는 경우
+-여행 확정 후~여행 개시45일전까지 통보시:항공 발권 취소수수료 및 숙박예약 취소 수수료
+-여행개시44~30일전까지 통보시:총 상품가격의50%배상+항공 발권 취소수수료+숙박 + 액티비티예약 취소 수수료
+-여행개시29~10일전까지 통보시:상품 가격의70%배상+항공 발권 취소수수료+숙박 + 액티비티예약 취소 수수료
+-여행개시9~당일까지 통보시:상품 가격의 100%배상+항공 발권 취소수수료+숙박 + 액티비티예약 취소 수수료
+- 미주 국내선 항공은 전체 환불 불가
+※단,환불이 불가한 항공권 등 전액 환불 불가인 경우에는 취소 일자와 관계없이 실제 비용을 적용합니다.
+
+▶기타 참고 사항
+1)기상 상황,천재지변으로 항공(국제선 및 국내선)이 지연되거나 결항되어 현지 추가 비용(숙박,식사,항공 등)발생 시
+현지 원가로 본인(여행자)이 지불하게 됨을 미리 안내드립니다.
+2)본인(여행자)의 부주의로 인한 여행 일정상의 차질에 대해서는 본사 및 항공사에서 책임을지지 않습니다.
+※취소 접수는 업무시간 내 접수만 가능합니다. (한국 / 알래스카 시차 : -16시간 한국보다 느림)
+※여행의 취소는 토/일요일 및 공휴일을 제외한 주중에 가능합니다.
+					</textarea>
+				</div>
+			  </div>
+			</div>
+			
+			<input class="btn btn-default reservation" type="button" onClick="location.href='domestic.html'" value="저장"/>
+			<input class="btn btn-default reservation" type="button" onClick="location.href='domestic.html'" value="목록"/>
+			<input class="btn btn-default reservation" type="button" onClick="location.href='domestic.html'" value="취소"/>
+		</div>
+	</div>
+</div>
+<!-- ------------------------------------------content end------------------------------------------ -->
+
+<!-- ------------------------------------------footer------------------------------------------ -->
+<div class="footer">
+	<div class="footertop">
+		<ul>
+			<li>이용약관</li>
+			<li>개인정보처리방침</li>
+			<li>여행약관</li>
+			<li>이메일주소 무단수집 거부</li>
+			<li>다이렉트 결제</li>
+			<li><i class="fab fa-facebook-square"></i></li>
+			<li><i class="fab fa-twitter-square"></i></li>
+			<li><i class="fab fa-goodreads"></i></li>
+		</ul>
+	</div>
+	
+	<div style="width : 1280px;">
+		<div><img class="bottomimg" src="../img/logo.png"></div>
+		<div class="bottomcontent">
+			<h4>Tourism 관광여행사 NEW WORLD TRAVEL</h4>
+			<p>대표자 CEO : 최영제 ㅣ 현지주소 : 3901 Old Seward Hwy, Suite 12-A Anchorage, 대전 99503</p>
+			<p>전화번호 : 044)444-4444 ㅣ 팩스번호 : 044)444-4444 ㅣ 이메일 주소 : cke6658@gmail.com</p>
+			<p>Business Licence: LN#435608 Tourism 122269</p>
+		</div>
+	</div>
+	
+</div>
+
+<script>
+
+$('.topmenu > ul').hover(function(){
+	$('.topmenu > ul').css("height","300px");
+	$('.topmenu > ul').css("background","#fff");
+	$('.topmenu > ul > li').css("color", "#222");
+	$('.slidebar').css("display","block");
+	
+$('.topmenu > ul > #menuborder').hover(function(){
+	$(this).css("border-bottom", "5px solid #36f");
+},function(){
+	$(this).css("border-bottom", "none");
+});
+
+$(".slidebar > li > a").hover(function(){
+	$(this).css("background", "#e6e6e6");
+	$(this).css("color", "#36f");
+	}, function(){
+	$(this).css("color", "#222");
+	$(this).css("background", "none");
+});
+
+}, function(){
+	$(".topmenu > ul").css("background", "#337ab7")
+	$('.topmenu > ul > li').css("color", "#fff");
+	$('.slidebar').css("display","none");
+	$('.topmenu > ul').css("height","100px");
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="../fullPage.js-2.9.7/jquery.fullPage.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/header,footer.css" rel="stylesheet">
+	<link href="../css/service.css" rel="stylesheet">
+	<link href="../css/hotel_food.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+		<p>이벤트</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+		<section class="modalEvent">
+			<div><img src="../img/modal1.jpg"/></div>
+			<div><img src="../img/modal2.jpg"/></div>
+			<div><img src="../img/modal3.jpg"/></div>
+			<div><img src="../img/modal4.jpg"/></div>
+		</section>
+	  </div>	
+    </div>
+  </div>
+</div>
+<script>
+	$('.modalEvent').slick({
+		slide:'div',
+		slidesToShow:1,
+		slidesToScroll:1,
+		autoplay:true,
+		autoplaySpeed:5000,
+		infinite:true,
+		pauseOnHover:true,
+		arrows : true,
+		prevArrow : "<i class='fas fa-arrow-left' style='position: absolute; top: 135px; left: 0; z-index: 1; cursor: pointer;'></i>",		// 이전 화살표 모양 설정
+		nextArrow : "<i class='fas fa-arrow-right' style='position: absolute; top: 135px; right: 0; z-index: 1; cursor: pointer;'></i>"		// 다음 화살표 모양 설정
+	});
+</script>
+
+<nav class="navbar navbar-default topfixed toptop">
+	<div class="container-fluid topfixed">
+		<div class="collapse navbar-collapse topfixed" id="bs-example-navbar-collapse-1" style="height : 0px !important;">
+			<ul class="topmenu">
+				<li onclick="location.href='../index.html'"><a><img src="../img/logo.png" id="logoimg"></a></li>
+				<ul>
+					<li id="menuborder">관광명소
+						<ul class="slidebar">
+							<li><a href="../attractions/domestic.html">국내코스</a></li>
+							<li><a href="../attractions/overseas.html">해외코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">축제 / 행사
+						<ul class="slidebar">
+							<li><a href="../festival/progressfestival.html">진행중인 축제,행사</a></li>
+							<li><a href="../festival/intendedfestival.html">예정된 축제,행사</a></li>
+							<li><a href="../festival/Pushevent.html">추천코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">숙박 / 음식
+						<ul class="slidebar">
+							<li><a href="../hotel_food/hotel.html">호텔</a></li>
+							<li><a href="../hotel_food/other.html">그 외 숙박업소</a></li>
+							<li><a href="../hotel_food/Food.html">음식</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">고객센터
+						<ul class="slidebar">
+							<li><a href="../service/notice.html">공지사항</a></li>
+							<li><a href="../service/ptp.html">1:1문의</a></li>
+							<li><a href="../service/check.html">개인정보수정</a></li>
+							<li><a href="../index.html">로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<div class="container menufixed">
+	<ul>
+		<li class="abc" data-toggle="modal" data-target="#myModal">이<br><br><br>벤<br><br><br>트</li>
+		<li><i class="fab fa-youtube" onclick="location.href='https://www.youtube.com'"></i></li>
+		<li><i class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com/'"></i></li>
+	</ul>
+</div>
+
+<!-- ------------------------------------------header&fixed------------------------------------------ -->
+
+
+<!-- ------------------------------------------content start------------------------------------------ -->
+<div class="container containerbox">
+	<div class="leftcontent">
+		<div class="list-group">
+			<a class="list-group-item active">숙박 / 음식</a>
+			<a href="hotel.html" class="list-group-item">호텔</a>
+			<a href="other.html" class="list-group-item">그 외 숙박업소</a>
+			<a href="Food.html" class="list-group-item">음식</a>
+		</div>
+	</div>
+
+	<div class="rightcontent" style="text-align : center;">
+		<ol class="breadcrumb">
+			<li><a href="#">숙박 / 음식</a></li>
+			<li class="active">음식</li>
+		</ol>
+		
+		<h1>음식</h1>
+		<form method="post" action="">
+				
+			<div class="selectbox">
+				<select>
+					<option>음식</option>
+					<option>내용</option>
+				</select>
+				<input type="text" size="10" maxlength="10" style="height : 22px; text-align : left;">
+				<button type="button" class="btn btn-default write" onClick="location.href='../hotel_food/hotel.html'">검색</button>
+			</div>
+				
+			<div class="hotelbox">
+				<h4>Tourism 추천 음식</h4>
+				<div class="hotelimg">
+					<img src="../img/맛집1_re.jpg">
+					<div class="mini"><div class="hiddenimg"><img src="../img/맛집1_re.jpg"></div><img src="../img/맛집1_re.jpg"></div>
+					<div class="mini"><div class="hiddenimg"><img src="../img/맛집2_re.jpg"></div><img src="../img/맛집2_re.jpg"></div>
+					<div class="mini"><div class="hiddenimg"><img src="../img/맛집3_re.jpg"></div><img src="../img/맛집3_re.jpg"></div>
+					<div class="mini"><div class="hiddenimg"><img src="../img/맛집1_re.jpg"></div><img src="../img/맛집1_re.jpg"></div>
+				</div>
+				<div id="twobox">
+					<div class="hotelcontent">
+						<p>떡갈비</p>
+						<div style="width : 390px;"><img src="../img/떡갈비.jpg" style="width : 50%; max-height : 220px; float : left;"></div>
+					</div>
+					
+					<div class="hotelreview">
+						<div class="reviewtop">
+							<div>
+								<p>최고</p>
+								<p>3,900건의 이용후기</p>
+							</div>
+							<h3>9.0</h3>
+						</div>
+						
+						<div class="reviewbot">
+							<h3>현재 가격</h3>
+							<h2>\12,000</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<input class="btn btn-default" type="button" value="글쓰기" onClick="location.href='Foodwrite.html'" style="float : right; margin-top : 30px;">
+		</form>
+	</div>
+</div>
+<!-- ------------------------------------------content end------------------------------------------ -->
+
+<!-- ------------------------------------------footer------------------------------------------ -->
+<div class="footer">
+	<div class="footertop">
+		<ul>
+			<li>이용약관</li>
+			<li>개인정보처리방침</li>
+			<li>여행약관</li>
+			<li>이메일주소 무단수집 거부</li>
+			<li>다이렉트 결제</li>
+			<li><i class="fab fa-facebook-square"></i></li>
+			<li><i class="fab fa-twitter-square"></i></li>
+			<li><i class="fab fa-goodreads"></i></li>
+		</ul>
+	</div>
+	
+	<div style="width : 1280px;">
+		<div><img class="bottomimg" src="../img/logo.png"></div>
+		<div class="bottomcontent">
+			<h4>Tourism 관광여행사 NEW WORLD TRAVEL</h4>
+			<p>대표자 CEO : 최영제 ㅣ 현지주소 : 3901 Old Seward Hwy, Suite 12-A Anchorage, 대전 99503</p>
+			<p>전화번호 : 044)444-4444 ㅣ 팩스번호 : 044)444-4444 ㅣ 이메일 주소 : cke6658@gmail.com</p>
+			<p>Business Licence: LN#435608 Tourism 122269</p>
+		</div>
+	</div>
+	
+</div>
+
+<script>
+
+$('.topmenu > ul').hover(function(){
+	$('.topmenu > ul').css("height","300px");
+	$('.topmenu > ul').css("background","#fff");
+	$('.topmenu > ul > li').css("color", "#222");
+	$('.slidebar').css("display","block");
+	
+$('.topmenu > ul > #menuborder').hover(function(){
+	$(this).css("border-bottom", "5px solid #36f");
+},function(){
+	$(this).css("border-bottom", "none");
+});
+
+$(".slidebar > li > a").hover(function(){
+	$(this).css("background", "#e6e6e6");
+	$(this).css("color", "#36f");
+	}, function(){
+	$(this).css("color", "#222");
+	$(this).css("background", "none");
+});
+
+}, function(){
+	$(".topmenu > ul").css("background", "#337ab7")
+	$('.topmenu > ul > li').css("color", "#fff");
+	$('.slidebar').css("display","none");
+	$('.topmenu > ul').css("height","100px");
+});
+	
+	/*
+	$(".star_rating a").click(function() {
+		$(this).parent().children("a").removeClass("on");
+		$(this).addClass("on").prevAll("a").addClass("on");
+		return false;
+	});
+	*/
+	
+	$(".hotelbox").hover(function(){
+		$(this).find(".hotelcontent > p").css("text-decoration","underline");
+		$(this).find(".hotelcontent > p").css("color","#337ab7");
+		$(this).css("box-shadow","-1px 3px 10px silver");
+	},function(){
+		$(this).css("box-shadow","none");
+		$(this).find(".hotelcontent > p").css("text-decoration","none");
+		$(this).find(".hotelcontent > p").css("color","black");
+	});
+	
+	$(".mini").hover(function(){
+		$(this).find(".hiddenimg").css("display","block");
+	},function(){
+		$(this).find(".hiddenimg").css("display","none");
+	});
+	
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="../fullPage.js-2.9.7/jquery.fullPage.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

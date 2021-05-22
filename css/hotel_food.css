@@ -1,0 +1,96 @@
+.hotelbox{
+	width : 100%;
+	height : auto;
+	cursor : pointer;
+	border-bottom : 1px solid #dddfe2;
+	border-right : 1px solid #dddfe2;
+	border-left : 1px solid #dddfe2;
+	transition: box-shadow 100ms ease-in-out, transform 100ms ease-in-out;
+	margin-bottom : 15px;
+	display : inline-block;
+}
+
+#twobox{width : 66.3%; height : auto; float : left;}
+
+.hotelbox{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.hotelbox h4{
+	display : block;
+	background : #337ab7;
+	color : white;
+	height : 30px;
+	vertical-align : middle;
+	text-align : left;
+	padding-top : 5px;
+	padding-left : 5px;
+	margin-bottom : 0;
+	margin-top : 0;
+}
+
+.hotelimg{width : 290px; float : left;}
+.hotelimg img{width : 100%;}
+.mini{width : 70px; float : left; margin : 1px 1px; position : relative;}
+.hiddenimg{position : absolute; width : 450px; top : -320px; z-index : 1; display : none; border}
+
+.hotelcontent{
+	float : left;
+	text-align : left;
+	width : 60%;
+	height : 260px;
+	border-right : 1px solid #dddfe2;
+	border-left : 1px solid #dddfe2;
+	padding : 5px 5px;
+}
+.hotelcontent input:nth-child(3){width : 70px;}
+.hotelcontent input{border : 2px solid #337ab7; width : 110px; float : left; padding : 2px 5px; margin-right : 5px;}
+
+.hotelcontent p{text-align : left;}
+.star_rating {font-size:0; letter-spacing:-4px;}
+.star_rating a {
+    font-size:22px;
+    letter-spacing:0;
+    display:inline-block;
+    margin-left:5px;
+    color:#ccc;
+    text-decoration:none;
+}
+.star_rating a:first-child {margin-left:0;}
+.star_rating a.on {color:#fc6a20;}
+
+.hotelreview{float : left; width : 40%; height : 100%; position : relative;}
+.hotelreview div{height : auto; padding-top : 5px;}
+.hotelreview div p{float : left; text-align : right; width : 155px; margin-bottom : 5px;}
+.hotelreview .reviewtop h3{
+	display : block;
+	float : right;
+	text-align : right;
+	background : #337ab7;
+	color : white;
+	position: absolute;
+    top: -10px;
+    right: 0;
+	width : 50px;
+	height : 50px;
+	border-radius: 50px 50px 50px 0px;
+	padding-right : 8px;
+	padding-top : 10px;
+}
+
+.reviewtop div p{padding-right : 15px;}
+.hotelreview > .reviewbot h3{margin-top : 165px; text-align : right; padding-right : 15px;}
+.hotelreview h2{margin-top : 10px; text-align : right; padding-right : 15px;}
+
+
+
+
+
+
+
+
+
+
+

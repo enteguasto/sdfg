@@ -1,0 +1,131 @@
+/* ====================================== container ================================================== */
+.containerbox{
+	width : 100%;
+	height : 1000px;
+	padding : 0 0;
+	padding-top:150px;
+	margin : 0 15px;
+}
+
+.leftcontent{
+	width : 20%;
+	height : 500px;
+	float : left;
+	margin-right : 15px;
+	padding-top : 30px;
+}
+
+.rightcontent{
+	width : 70%;
+	height : auto;
+	float : left;
+	padding-left : 20px;
+}
+
+.breadcrumb{width : 200px; float : left; margin-bottom : 20px;}
+.breadcrumb:after { content : ""; display : table; clear : both;}
+
+.list-group a{padding : 15px 0; width:200px; margin : 0 0;}
+.list-group a:first-child{padding : 20px 0; font-size : 20px;}
+	
+.rightcontent h1{margin-bottom : 50px; padding-top : 50px; padding-right : 60px;}
+.rightcontent .selectbox{float : right; margin-bottom : 20px;}
+
+/* ====================================== container ================================================== */
+
+/* ====================================== update ================================================== */
+label {width : 70%; display: block; position: relative; margin: 40px 0px;}
+.label-txt { position: absolute; top: -1.6em; padding: 10px; font-size: .8em; letter-spacing: 1px; color: rgb(120,120,120); transition: ease .3s; }
+.input { width: 100%; padding: 10px; background: transparent; border: none; outline: none; text-align : left;}
+.line-box { position: relative; width: 100%; height: 2px; background: #BCBCBC; }
+.line { position: absolute; width: 0%; height: 2px; top: 0px; left: 50%; transform: translateX(-50%); background: #8BC34A; transition: ease .6s; }
+.input:focus + .line-box .line { width: 100%; }
+.label-active { top: -3em; } button { display: inline-block; padding: 12px 24px; background: rgb(220,220,220); font-weight: bold; color: rgb(120,120,120); border: none; outline: none; border-radius: 3px; cursor: pointer; transition: ease .3s; }
+button:hover { background: #8BC34A; color: #ffffff; }
+
+#emailcheck{
+	position : absolute;
+	top:10px;
+	right:0px;
+	display : none;
+}
+
+#email{
+	position : absolute;
+	top : -5px;
+	right : -100px;
+}
+
+#phonecheck{
+	position : absolute;
+	top:10px;
+	right:0px;
+	display : none;
+}
+
+#phone{
+	position : absolute;
+	top : -5px;
+	right : -100px;
+}
+/* ====================================== update ================================================== */
+
+/* ====================================== notice ================================================== */
+.write{
+	height : 23px;
+	padding-top : 0px;
+	padding-bottom : 0px;
+	margin : 0 0;
+	vertical-align: 0;
+}
+
+.totalpage{float : left;}
+.writebutton{float : right;}
+.pagenation{margin-top : 50px;}
+.noticetable tbody tr td{text-align : center;}
+.noticetable > tbody >  tr > td:nth-child(2){float : left; width : 100%; text-align : left;}
+/* ====================================== notice ================================================== */
+
+/* ====================================== noticeview ================================================== */
+.fa-circle{float : left; font-size : 5px; line-height:200%; }
+.table tr td p{float : left;}
+.table tr td input, .table tr td textarea{text-align : left;}
+.table tr td{text-align:left;}
+
+.viewNavi {
+    width: 100%;
+    border-top: 1px solid #d0d3d9;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.viewNavi .next {
+    height: 38px;
+    border-bottom: 1px solid #d0d3d9;
+    font-size: 12px;
+    color: #242424;
+    background-position: 0 -49px;
+    text-align: center;
+	letter-spacing : 2px;
+}
+
+.viewNavi .prev {
+    height: 38px;
+    border-bottom: 1px solid #d0d3d9;
+    font-size: 12px;
+    color: #242424;
+    background-position: 0 -87px;
+    text-align: center;
+	letter-spacing : 2px;
+}
+
+.viewNavi td {
+    height: 38px;
+    padding: 0 5px 0 20px;
+    border-bottom: 1px solid #d0d3d9;
+    color: #555;
+    line-height: normal;
+	text-align : left;
+}
+/* ====================================== noticeview ================================================== */
+

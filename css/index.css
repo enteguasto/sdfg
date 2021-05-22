@@ -1,0 +1,392 @@
+*{list-style-type:none;margin:0;padding:0}
+a{color : #222; text-decoration : none !important;}
+body {height : auto; position : relative;}
+
+.section{
+	overflow: hidden;
+}
+
+#fp-nav ul li:nth-child(1){
+	position : fixed;
+	top : 38vh;
+	left : 2px;
+	display : block;
+	width : 30px;
+	height : 10px;
+	z-index:100;
+	color:white;
+	font-size : 10px;
+	cursor : pointer;
+}
+
+#fp-nav ul li:nth-child(2){
+	position : fixed;
+	top : 42vh;
+	left : 2px;
+	display : block;
+	width : 30px;
+	height : 10px;
+	z-index:100;
+	color:white;
+	font-size : 10px;
+	cursor : pointer;
+}
+
+#fp-nav ul li:nth-child(3){
+	position : fixed;
+	top : 46vh;
+	left : 2px;
+	display : block;
+	width : 30px;
+	height : 10px;
+	z-index:100;
+	color:white;
+	font-size : 10px;
+	cursor : pointer;
+}
+
+#fp-nav ul li:nth-child(4){
+	position : fixed;
+	top : 50vh;
+	left : 2px;
+	display : block;
+	width : 30px;
+	height : 10px;
+	z-index:100;
+	color:white;
+	font-size : 10px;
+	cursor : pointer;
+}
+
+#fp-nav ul li:nth-child(5) div{
+	position : fixed;
+	top : 54vh;
+	left : 2px;
+	display : block;
+	width : 30px;
+	height : 10px;
+	z-index:100;
+	color:white;
+	font-size : 10px;
+	cursor : pointer;
+}
+#fp-nav ul li:nth-child(5) div:hover{
+	font-size : 30px;
+}
+
+#myVideo{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black; /* in case the video doesn't fit the whole page*/
+	background-image: /* our video */;
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover; /*cover video background */
+}
+	
+.topfixed{
+	width : 99vw;
+	height : 100px;
+	position : fixed;
+	background : transparent;
+	border : none;
+	z-index : 10;
+	padding-left : 0.5%;
+	padding-right : 3%;
+}
+
+.topmenu{
+	height : 150px;
+}
+
+.topmenu > ul{
+	position : relative;
+	margin-left : 200px;
+	transition-property : background, color;
+	transition-timing-function : linear;
+	transition-duration : 0.5s;
+}
+
+.topmenu > ul > li{
+	width : 25%;
+	display : inline-block;
+	padding-top : 35px;
+	height : 100px;
+	color : white;
+	text-align : center;
+	cursor : pointer;
+	font-size : 20px;
+	z-index : 10;
+	float : left;
+}
+
+#menuborder{border-bottom : none;}
+
+.topmenu > li:first-child{
+	padding : 0;
+	width : 200px;
+	height : 50px;
+	float : left;
+}
+
+#logoimg{
+	position: relative;
+    top: -18px;
+    left: -10px;
+    max-height: 100px;
+    max-width: 200px;
+}
+
+.menufixed{
+	position : fixed;
+	right : 0px;
+	padding : 0;
+	width: 3.125vw;
+    height: 100vh;
+	background : rgba(255, 255, 255, 0.2);
+	border : none;
+	text-align : center;
+	color : white;
+	font-size : 16px;
+	z-index : 10;
+	transition-property : background, color;
+	transition-timing-function : linear;
+	transition-duration : 0.5s;
+}
+
+.menufixed:hover{background:white; color:black;}
+	
+.menufixed ul{ width: 3.125vw; height : 100%; border-right : 1px solid black;}
+
+.menufixed ul li{
+	display : inline-block;
+	margin-left : 0px;
+	margin-right : 5px;
+	padding-bottom : 9px;
+	width: 3.125vw;
+	cursor : pointer;
+	border-bottom : 1px solid black;
+}
+
+.menufixed ul li{margin-top : 15px;}
+.menufixed ul li:first-child{height : 65vh; margin-top : 0px; padding : 20vh 0;}
+
+.menufixed ul li i{font-size : 35px;}
+
+ .slidebar{display : none; margin-top : 60px; padding-left : 17%;}
+
+.slidebar li{
+	display : block;
+	width : 85%;
+	height : 45px;
+	text-align : center;
+	font-size : 15px;
+	transition-property : background, color;
+	transition-timing-function : linear;
+	transition-duration : 0.5s;
+}
+
+.slidebar > li > a{
+	display : block;
+	background : none;
+	height : 30px;
+	padding-top : 5px;
+	transition-property : background;
+	transition-timing-function : linear;
+	transition-duration : 0.1s;
+}
+/*---------------------------------------fixed header, menu------------------------------------------*/
+.section{
+	background-size: cover;
+	width:100vw; height:100vh;
+	overflow : hidden;
+}
+
+#index .layer{
+	position: relative;
+	z-index: 10;
+	left : 0%;
+	top: 40%;
+	color : white;
+	font-size : 35px;
+	text-align : center;
+	font-weight : 800;
+	
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.pageone{
+	background-image : url("../img/관광명소.jpg");
+}
+
+.pagetwo{
+	background-image : url("../img/축제.jpg");
+}
+
+.pagethree{
+	background-image : url("../img/도보여행.jpg");
+}
+
+.pagefour{
+	background-image : url("../img/숙박&음식.jpg");
+}
+
+.contentbox{
+	width : 60%;
+	height : 50%;
+	position : relative;
+	top : 15vh;
+	left : 15vw;
+}
+
+.subpage1{
+	position: relative;
+	float : right;
+	z-index: 5;
+	width : 100%;
+	right : 0;
+	top: 1px;
+	color : white;
+	font-size : 35px;
+	font-weight : 800;
+}
+
+.subpage1 > h1{float : right;}
+
+.content1{
+	position: absolute;
+	width : 450px;
+	height : 450px;
+	float : left;
+	z-index: 11;
+	left : 0;
+	top: 10vh;
+	color : white;
+	font-size : 35px;
+	font-weight : 800;
+	overflow : hidden;
+	-webkit-transition: .5s all;
+    transition: .5s all;
+}
+
+.content2{
+	position: absolute;
+	width : 450px;
+	height : 450px;
+	float : right;
+	z-index: 10;
+	right : 0;
+	top: 25vh;
+	color : white;
+	font-size : 35px;
+	font-weight : 800;
+	overflow : hidden;
+	-webkit-transition: .5s all;
+    transition: .5s all;
+}
+
+.content3{
+	position: absolute;
+	width : 100%;
+	height : 450px;
+	float : left;
+	z-index: 10;
+	right : 0;
+	top: 25vh;
+	color : white;
+	font-size : 35px;
+	font-weight : 800;
+	overflow : hidden;
+	-webkit-transition: .5s all;
+    transition: .5s all;
+}
+
+.downcontent > h3{float : right;}
+
+.downcontent{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.upcontent, .downcontent{width : 100%;}
+
+.upcontent, .downcontent{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.subpicture{
+	display : block;
+	width : 650px;
+	height : 430px;
+	-webkit-transition: .5s all;
+    transition: .5s all;
+}
+
+.visual+div{
+	width : 650px;
+	max-height : 430px;
+	-webkit-transition: .5s all;
+    transition: .5s all;
+}
+
+.visual > div > div > .imgdiv1{background : url("../img/img1_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv2{background : url("../img/img3_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv3{background : url("../img/img5_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+
+.visual > div > div > .imgdiv4{background : url("../img/img2_re.jpg "); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv5{background : url("../img/img4_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv6{background : url("../img/img6_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+
+
+
+.visual > div > div > .imgdiv7{background : url("../img/진행축제1_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv8{background : url("../img/진행축제2_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv9{background : url("../img/진행축제3_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+
+.visual > div > div > .imgdiv10{background : url("../img/예정축제1_re.jpg "); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv11{background : url("../img/예정축제2_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv12{background : url("../img/예정축제3_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+
+.visual > div > div > .imgdiv13{background : url("../img/추천코스1.jpg"); background-repeat : no-repeat; min-height : 430px; width : 100%; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv14{background : url("../img/추천코스2.jpg"); background-repeat : no-repeat; min-height : 430px; width : 100%; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv15{background : url("../img/추천코스3.jpg"); background-repeat : no-repeat; min-height : 430px; width : 100%; -webkit-transition: .5s all; transition: .5s all;}
+
+.visual > div > div > .imgdiv16{background : url("../img/숙소1_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv17{background : url("../img/숙소2_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv18{background : url("../img/숙소3_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+
+.visual > div > div > .imgdiv19{background : url("../img/맛집1_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv20{background : url("../img/맛집2_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+.visual > div > div > .imgdiv21{background : url("../img/맛집3_re.jpg"); background-repeat : no-repeat; min-height : 430px; min-width : 650px; -webkit-transition: .5s all; transition: .5s all;}
+
+
+.content1:hover, .content2:hover{
+	width : 650px;
+	z-index : 100;
+}
+
+.toptop{margin-left : 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

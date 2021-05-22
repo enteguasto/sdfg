@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/header,footer.css" rel="stylesheet">
+	<link href="../css/attractions.css" rel="stylesheet">
+	<link href="../css/festival.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+		<p>이벤트</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+		<section class="modalEvent">
+			<div><img src="../img/modal1.jpg"/></div>
+			<div><img src="../img/modal2.jpg"/></div>
+			<div><img src="../img/modal3.jpg"/></div>
+			<div><img src="../img/modal4.jpg"/></div>
+		</section>
+	  </div>	
+    </div>
+  </div>
+</div>
+<script>
+	$('.modalEvent').slick({
+		slide:'div',
+		slidesToShow:1,
+		slidesToScroll:1,
+		autoplay:true,
+		autoplaySpeed:5000,
+		infinite:true,
+		pauseOnHover:true,
+		arrows : true,
+		prevArrow : "<i class='fas fa-arrow-left' style='position: absolute; top: 135px; left: 0; z-index: 1; cursor: pointer;'></i>",		// 이전 화살표 모양 설정
+		nextArrow : "<i class='fas fa-arrow-right' style='position: absolute; top: 135px; right: 0; z-index: 1; cursor: pointer;'></i>"		// 다음 화살표 모양 설정
+	});
+</script>
+
+<nav class="navbar navbar-default topfixed toptop">
+	<div class="container-fluid topfixed">
+		<div class="collapse navbar-collapse topfixed" id="bs-example-navbar-collapse-1" style="height : 0px !important;">
+			<ul class="topmenu">
+				<li onclick="location.href='../index.html'"><a><img src="../img/logo.png" id="logoimg"></a></li>
+
+				<ul>
+					<li id="menuborder">관광명소
+						<ul class="slidebar">
+							<li><a href="../attractions/domestic.html">국내코스</a></li>
+							<li><a href="../attractions/overseas.html">해외코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">축제 / 행사
+						<ul class="slidebar">
+							<li><a href="../festival/progressfestival.html">진행중인 축제,행사</a></li>
+							<li><a href="../festival/intendedfestival.html">예정된 축제,행사</a></li>
+							<li><a href="../festival/Pushevent.html">추천코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">숙박 / 음식
+						<ul class="slidebar">
+							<li><a href="../hotel_food/hotel.html">호텔</a></li>
+							<li><a href="../hotel_food/other.html">그 외 숙박업소</a></li>
+							<li><a href="../hotel_food/Food.html">음식</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">고객센터
+						<ul class="slidebar">
+							<li><a href="../service/notice.html">공지사항</a></li>
+							<li><a href="../service/ptp.html">1:1문의</a></li>
+							<li><a href="../service/check.html">개인정보수정</a></li>
+							<li><a href="../index.html">로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<div class="container menufixed">
+	<ul>
+		<li class="abc" data-toggle="modal" data-target="#myModal">이<br><br><br>벤<br><br><br>트</li>
+		<li><i class="fab fa-youtube" onclick="location.href='https://www.youtube.com'"></i></li>
+		<li><i class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com/'"></i></li>
+	</ul>
+</div>
+
+<!-- ------------------------------------------header&fixed------------------------------------------ -->
+
+
+<!-- ------------------------------------------content start------------------------------------------ -->
+<div class="container containerbox">
+	<div class="leftcontent">
+		<div class="list-group">
+			<a class="list-group-item active">축제 / 행사</a>
+			<a href="progressfestival.html" class="list-group-item">진행중인 축제</a>
+			<a href="intendedfestival.html" class="list-group-item">예정된 축제</a>
+			<a href="Pushevent.html" class="list-group-item">추천코스</a>
+		</div>
+	</div>
+
+	<div class="rightcontent" style="height : 800px;">
+		<ol class="breadcrumb" style="width : 250px;">
+			<li><a href="#">축제 / 행사</a></li>
+			<li class="active">진행중인 축제</li>
+		</ol>
+		
+		<h1>진행중인 축제</h1>
+		
+		<div class="contents" id="content" style="width : 100%">
+
+
+		<!-- 날짜 -->
+		<div class="calendar">
+			<a href=""><i class="fas fa-caret-square-left"></i></a>
+			<span>2021년 05월</span>
+			<a href=""><i class="fas fa-caret-square-right"></i></a>
+		</div>
+		<span class="today" style="float : right;">2021년04월26일</span>
+		<!-- //날짜 -->
+
+		<table class="common_calendar" style="width : 100%">
+			<colgroup>
+				<col style="width: 14.2%;">
+				<col style="width: 14.3%;">
+				<col style="width: 14.3%;">
+				<col style="width: 14.3%;">
+				<col style="width: 14.3%;">
+				<col style="width: 14.3%;">
+				<col style="width: 14.3%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" class="sun">일</th>
+					<th scope="col">월</th>
+					<th scope="col">화</th>
+					<th scope="col">수</th>
+					<th scope="col">목</th>
+					<th scope="col">금</th>
+					<th scope="col">토</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun">1</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>스페이스 연 ...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>오페라 갈라 ...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+				</tr>
+
+				<tr>
+					<td><span class="no_sun">2</span><br>
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>2021 유벨...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>어린이날 기념...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">3</span><br></td>
+					<td><span class="no_sun">4</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>2021 에듀...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">5</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>클라리넷과 함...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>핑크퐁 클래식...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">6</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>대전피아노연구...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>제25회 관현...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">7</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>색소포니스트 ...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>최수열×조진주...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">8</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>장진선 바이올...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>2021 KB...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+				</tr>
+
+				<tr>
+					<td><span class="no_sun">9</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>클래시모 필하...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>지휘자 박재룡...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">10</span><br></td>
+					<td><span class="no_sun">11</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>2021 아침...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">12</span><br>
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>바이올리니스트...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>뮤지컬 갈라 ...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">13</span><br>
+					
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>대전시립합창단...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>비올리스트 오...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">14</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>대전시립교향악...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>안디무지크 "...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">15</span><br>
+					
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>Liberte...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>피아졸라 플러...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+				</tr>
+
+				<tr>
+					<td><span class="no_sun">16</span><br>
+					
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>소프라노 손지...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>[생활예술의날...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">17</span><br></td>
+					<td><span class="no_sun">18</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>대전 신포니에...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">19</span><br></td>
+					<td><span class="no_sun">20</span><br></td>
+					<td><span class="no_sun">21</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>제33회 대전...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">22</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>제7회 포유뮤...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+				</tr>
+
+				<tr>
+					<td><span class="no_sun">23</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>제33회 대덕...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>스트링디아츠 ...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">24</span><br></td>
+					<td><span class="no_sun">25</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>리사이틀 시리...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td class="today2"><span class="no_sun">26</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>문화가 있는 ...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">27</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>대전시립교향악...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">28</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>김근화 바이올...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">29</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>이지혜 바이올...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>대전시립청소년...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>김종영 클라리...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+				</tr>
+
+				<tr>
+					<td><span class="no_sun">30</span><br>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>이지혜 바이올...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>대전시립청소년...</p>
+									<p></p>
+							</a></li>
+						</ul>
+
+						<ul>
+							<li><a
+								href="progressfestivalview.html">
+									<p>김종영 클라리...</p>
+									<p></p>
+							</a></li>
+						</ul></td>
+
+					<td><span class="no_sun">31</span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+					<td><span class="no_sun"></span><br></td>
+				</tr>
+
+			</tbody>
+		</table>
+		<!-- //calendar -->
+		<input class="btn btn-default" type="button" value="글쓰기" onClick="location.href='progressfestivalwrite.html'" style="float : right; margin-top : 15px;">
+	</div>
+</div>
+<!-- ------------------------------------------content end------------------------------------------ -->
+
+<!-- ------------------------------------------footer------------------------------------------ -->
+<div class="footer">
+	<div class="footertop">
+		<ul>
+			<li>이용약관</li>
+			<li>개인정보처리방침</li>
+			<li>여행약관</li>
+			<li>이메일주소 무단수집 거부</li>
+			<li>다이렉트 결제</li>
+			<li><i class="fab fa-facebook-square"></i></li>
+			<li><i class="fab fa-twitter-square"></i></li>
+			<li><i class="fab fa-goodreads"></i></li>
+		</ul>
+	</div>
+	
+	<div style="width : 1280px;">
+		<div><img class="bottomimg" src="../img/logo.png"></div>
+		<div class="bottomcontent">
+			<h4>Tourism 관광여행사 NEW WORLD TRAVEL</h4>
+			<p>대표자 CEO : 최영제 ㅣ 현지주소 : 3901 Old Seward Hwy, Suite 12-A Anchorage, 대전 99503</p>
+			<p>전화번호 : 044)444-4444 ㅣ 팩스번호 : 044)444-4444 ㅣ 이메일 주소 : cke6658@gmail.com</p>
+			<p>Business Licence: LN#435608 Tourism 122269</p>
+		</div>
+	</div>
+	
+</div>
+
+<script>
+
+$('.topmenu > ul').hover(function(){
+	$('.topmenu > ul').css("height","300px");
+	$('.topmenu > ul').css("background","#fff");
+	$('.topmenu > ul > li').css("color", "#222");
+	$('.slidebar').css("display","block");
+	
+$('.topmenu > ul > #menuborder').hover(function(){
+	$(this).css("border-bottom", "5px solid #36f");
+},function(){
+	$(this).css("border-bottom", "none");
+});
+
+$(".slidebar > li > a").hover(function(){
+	$(this).css("background", "#e6e6e6");
+	$(this).css("color", "#36f");
+	}, function(){
+	$(this).css("color", "#222");
+	$(this).css("background", "none");
+});
+
+}, function(){
+	$(".topmenu > ul").css("background", "#337ab7")
+	$('.topmenu > ul > li').css("color", "#fff");
+	$('.slidebar').css("display","none");
+	$('.topmenu > ul').css("height","100px");
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="../fullPage.js-2.9.7/jquery.fullPage.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

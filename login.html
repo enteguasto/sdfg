@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+	<link href="css/header,footer.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+		<p>이벤트</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+		<section class="modalEvent">
+			<div><img src="img/modal1.jpg"/></div>
+			<div><img src="img/modal2.jpg"/></div>
+			<div><img src="img/modal3.jpg"/></div>
+			<div><img src="img/modal4.jpg"/></div>
+		</section>
+	  </div>
+    </div>
+  </div>
+</div>
+<script>
+	$('.modalEvent').slick({
+		slide:'div',
+		slidesToShow:1,
+		slidesToScroll:1,
+		autoplay:true,
+		autoplaySpeed:5000,
+		infinite:true,
+		pauseOnHover:true,
+		arrows : true,
+		prevArrow : "<i class='fas fa-arrow-left' style='position: absolute; top: 135px; left: 0; z-index: 1; cursor: pointer;'></i>",		// 이전 화살표 모양 설정
+		nextArrow : "<i class='fas fa-arrow-right' style='position: absolute; top: 135px; right: 0; z-index: 1; cursor: pointer;'></i>"		// 다음 화살표 모양 설정
+	});
+</script>
+
+<nav class="navbar navbar-default topfixed toptop">
+	<div class="container-fluid topfixed">
+		<div class="collapse navbar-collapse topfixed" id="bs-example-navbar-collapse-1" style="height : 0px !important;">
+			<ul class="topmenu">
+				<li onclick="location.href='index.html'"><a><img src="img/logo.png" id="logoimg"></a></li>
+				<ul>
+					<li id="menuborder">관광명소
+						<ul class="slidebar">
+							<li><a href="attractions/domestic.html">국내코스</a></li>
+							<li><a href="attractions/overseas.html">해외코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">축제 / 행사
+						<ul class="slidebar">
+							<li><a href="festival/progressfestival.html">진행중인 축제,행사</a></li>
+							<li><a href="festival/intendedfestival.html">예정된 축제,행사</a></li>
+							<li><a href="festival/Pushevent.html">추천코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">숙박 / 음식
+						<ul class="slidebar">
+							<li><a href="hotel_food/hotel.html">호텔</a></li>
+							<li><a href="hotel_food/other.html">그 외 숙박업소</a></li>
+							<li><a href="hotel_food/Food.html">음식</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">고객센터
+						<ul class="slidebar">
+							<li><a href="service/notice.html">공지사항</a></li>
+							<li><a href="service/ptp.html">1:1문의</a></li>
+							<li><a href="service/check.html">개인정보수정</a></li>
+							<li><a href="index.html">로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<div class="container menufixed">
+	<ul>
+		<li class="abc" data-toggle="modal" data-target="#myModal">이<br><br><br>벤<br><br><br>트</li>
+		<li><i class="fab fa-youtube" onclick="location.href='https://www.youtube.com'"></i></li>
+		<li><i class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com/'"></i></li>
+	</ul>
+</div>
+
+<!-- ------------------------------------------header&fixed------------------------------------------ -->
+
+
+<!-- ------------------------------------------content start------------------------------------------ -->
+<div class="container" style="padding : 0 0; height : 700px;">
+	<div class="cotn_principal">
+		<div class="cont_centrar">
+			<div class="cont_login">
+				<div class="cont_info_log_sign_up">
+					<div class="col_md_login">
+						<div class="cont_ba_opcitiy">
+							<h2>LOGIN</h2>  
+							<p>A better choice<br>better travel</p> 
+							<button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+						</div>
+					</div>
+					
+					<div class="col_md_sign_up">
+						<div class="cont_ba_opcitiy">
+							<h2>SIGN UP</h2>
+							<p>We give you a good choice<br>for your travel</p>
+							<button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="cont_back_info">
+					<div class="cont_img_back_grey">
+						<img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+					</div>
+				</div>
+				
+				<div class="cont_forms" >
+					<div class="cont_img_back_">
+						<img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+					</div>
+					
+					<div class="cont_form_login">
+						<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons fas fa-times"></i></a>
+						<h2>LOGIN</h2>
+						<input type="text" placeholder="Id" required />
+						<input type="password" placeholder="Password" required />
+						<button class="btn_login" onclick="location.href='index.html'">LOGIN</button>
+					</div>
+
+					<div class="cont_form_sign_up">
+						<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons fas fa-times"></i></a>
+						<h2>SIGN UP</h2>
+						<input type="text" placeholder="Id" required />
+						<input type="password" placeholder="Password" required />
+						<input type="password" placeholder="Confirm Password" required />
+						<input type="text" placeholder="Email" required />
+						<input type="text" placeholder="Email check" style="width : 127px; margin-left : 35px; float : left;"/>
+						<input class="mailchecker" type="button" value="메일전송" style="width : 127px; margin-left : 5px; float : left; text-align : center;"/>
+						<input type="text" class="mailconfirm" value="인증완료" style="display : none; text-align : center;" readonly />
+						<button class="btn_sign_up" onclick="location.href='login.html'">SIGN UP</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ------------------------------------------content end------------------------------------------ -->
+
+<!-- ------------------------------------------footer------------------------------------------ -->
+<div class="footer">
+	<div class="footertop">
+		<ul>
+			<li>이용약관</li>
+			<li>개인정보처리방침</li>
+			<li>여행약관</li>
+			<li>이메일주소 무단수집 거부</li>
+			<li>다이렉트 결제</li>
+			<li><i class="fab fa-facebook-square"></i></li>
+			<li><i class="fab fa-twitter-square"></i></li>
+			<li><i class="fab fa-goodreads"></i></li>
+		</ul>
+	</div>
+	
+	<div style="width : 1280px;">
+		<div><img class="bottomimg" src="img/logo.png"></div>
+		<div class="bottomcontent">
+			<h4>Tourism 관광여행사 NEW WORLD TRAVEL</h4>
+			<p>대표자 CEO : 최영제 ㅣ 현지주소 : 3901 Old Seward Hwy, Suite 12-A Anchorage, 대전 99503</p>
+			<p>전화번호 : 044)444-4444 ㅣ 팩스번호 : 044)444-4444 ㅣ 이메일 주소 : cke6658@gmail.com</p>
+			<p>Business Licence: LN#435608 Tourism 122269</p>
+		</div>
+	</div>
+	
+</div>
+<script>
+
+$(".mailchecker").on("click",function(){
+	$(".mailconfirm").css("display","");
+	$(".mailconfirm").css("margin-left","10px");
+	$(".mailconfirm").css("margin-top","20px");
+});
+
+function cambiar_login() {
+  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
+document.querySelector('.cont_form_login').style.display = "block";
+document.querySelector('.cont_form_sign_up').style.opacity = "0";               
+
+setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },400);  
+  
+setTimeout(function(){    
+document.querySelector('.cont_form_sign_up').style.display = "none";
+},200);  
+  }
+
+function cambiar_sign_up(at) {
+  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
+  document.querySelector('.cont_form_sign_up').style.display = "block";
+document.querySelector('.cont_form_login').style.opacity = "0";
+  
+setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";
+},100);  
+
+setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";
+},400);  
+
+
+}    
+
+
+
+function ocultar_login_sign_up() {
+
+document.querySelector('.cont_forms').className = "cont_forms";  
+document.querySelector('.cont_form_sign_up').style.opacity = "0";               
+document.querySelector('.cont_form_login').style.opacity = "0"; 
+
+setTimeout(function(){
+document.querySelector('.cont_form_sign_up').style.display = "none";
+document.querySelector('.cont_form_login').style.display = "none";
+},500);  
+  
+  }
+  
+$('.topmenu > ul').hover(function(){
+	$('.topmenu > ul').css("height","300px");
+	$('.topmenu > ul').css("background","#fff");
+	$('.topmenu > ul > li').css("color", "#222");
+	$('.slidebar').css("display","block");
+	
+$('.topmenu > ul > #menuborder').hover(function(){
+	$(this).css("border-bottom", "5px solid #36f");
+},function(){
+	$(this).css("border-bottom", "none");
+});
+
+$(".slidebar > li > a").hover(function(){
+	$(this).css("background", "#e6e6e6");
+	$(this).css("color", "#36f");
+	}, function(){
+	$(this).css("color", "#222");
+	$(this).css("background", "none");
+});
+
+}, function(){
+	$(".topmenu > ul").css("background", "#337ab7")
+	$('.topmenu > ul > li').css("color", "#fff");
+	$('.slidebar').css("display","none");
+	$('.topmenu > ul').css("height","100px");
+});
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="fullPage.js-2.9.7/jquery.fullPage.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

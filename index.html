@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="css/header,footer.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<nav class="navbar navbar-default topfixed toptop">
+	<div class="container-fluid topfixed">
+		<div class="collapse navbar-collapse topfixed" id="bs-example-navbar-collapse-1">
+			<ul class="topmenu">
+				<li onclick="location.href='index.html'"><a><img src="img/logo.png" id="logoimg"></a></li>
+				<ul>
+					<li id="menuborder">관광명소
+						<ul class="slidebar">
+							<li><a href="attractions/domestic.html">국내코스</a></li>
+							<li><a href="attractions/overseas.html">해외코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">축제 / 행사
+						<ul class="slidebar">
+							<li><a href="festival/progressfestival.html">진행중인 축제,행사</a></li>
+							<li><a href="festival/intendedfestival.html">예정된 축제,행사</a></li>
+							<li><a href="festival/Pushevent.html">추천코스</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">숙박 / 음식
+						<ul class="slidebar">
+							<li><a href="hotel_food/hotel.html">호텔</a></li>
+							<li><a href="hotel_food/other.html">그 외 숙박업소</a></li>
+							<li><a href="hotel_food/Food.html">음식</a></li>
+						</ul>
+					</li>
+					
+					<li id="menuborder">고객센터
+						<ul class="slidebar">
+							<li><a href="service/notice.html">공지사항</a></li>
+							<li><a href="service/ptp.html">1:1문의</a></li>
+							<li><a href="service/check.html">개인정보수정</a></li>
+							<li><a href="index.html">로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<div class="container menufixed">
+	<ul>
+		<li class="abc" onclick="loginPage();">로<br>그<br>인<br><br>/<br><br>회<br>원<br>가<br>입</li>
+		<li><i class="fab fa-youtube" onclick="location.href='http://youtube.com'"></i></li>
+		<li><i class="fab fa-facebook-square" onclick="location.href='https://www.facebook.com/'"></i></li>
+	</ul>
+</div>
+
+<div id="fullpage">
+	<div class="section" id="index" style="height:100%;">
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="video/index.mp4" type="video/mp4">
+			<source src="video/index.webm" type="video/webm">
+		</video>
+		<div class="layer">
+			<h1>편리하고</h1>
+			<h1>즐거운 선택</h1>
+			<h1>Tourlism</h1>
+		</div>
+	</div>
+	
+	<div class="section pageone" style="height:100%;">
+		<div class="contentbox">
+			<div class="subpage1">
+				<h1>관광명소</h1>
+			</div>
+		
+			<div class="content1">
+				<div class="upcontent"><h3>자연관광명소</h3></div>
+				<div class="subpicture">
+					<section class="visual">
+						<div class="imgdiv1"></div>
+						<div class="imgdiv2"></div>
+						<div class="imgdiv3"></div>
+					</section>
+				</div>
+			</div>
+			
+			<div class="content2">
+				<div class="downcontent"><h3>문화관광명소</h3></div>
+				<div class="subpicture">
+					<section class="visual">
+						<div class="imgdiv4"></div>
+						<div class="imgdiv5"></div>
+						<div class="imgdiv6"></div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section pagetwo" style="height:100%;">
+		<div class="contentbox">
+			<div class="subpage1">
+				<h1>축제 / 행사</h1>
+			</div>
+		
+			<div class="content1">
+				<div class="upcontent"><h3>진행중인 축제</h3></div>
+				<div class="subpicture">
+					<section class="visual">
+						<div class="imgdiv7"></div>
+					
+						<div class="imgdiv8"></div>
+					
+						<div class="imgdiv9"></div>
+					</section>
+				</div>
+			</div>
+			
+			<div class="content2">
+				<div class="downcontent"><h3>예정된 축제</h3></div>
+				<div class="subpicture">
+					<section class="visual">
+						<div class="imgdiv10"></div>
+					
+						<div class="imgdiv11"></div>
+					
+						<div class="imgdiv12"></div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="section pagefour" style="height:100%;">
+		<div class="contentbox">
+			<div class="subpage1">
+				<h1>숙박 / 음식</h1>
+			</div>
+		
+			<div class="content1">
+				<div class="upcontent"><h3>여행지 근처 숙박업소</h3></div>
+				<div class="subpicture">
+					<section class="visual">
+						<div class="imgdiv16"></div>
+					
+						<div class="imgdiv17"></div>
+					
+						<div class="imgdiv18"></div>
+					</section>
+				</div>
+			</div>
+			
+			<div class="content2">
+				<div class="downcontent"><h3>여행지 주변 맛집</h3></div>
+				<div class="subpicture">
+					<section class="visual">
+						<div class="imgdiv19"></div>
+					
+						<div class="imgdiv20"></div>
+					
+						<div class="imgdiv21"></div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        //options here
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        autoScrolling:true,
+        scrollHorizontally: true,
+		keyboardScrolling : true,
+		navigation: true,
+		navigationPosition: 'left',
+		navigationTooltips: ['--', '--', '--', '--', '--']
+    });
+});
+	
+	$('.visual').slick({
+		slide:'div',
+		slidesToShow:1,
+		slidesToScroll:1,
+		autoplay:true,
+		autoplaySpeed:5000,
+		infinite:true,
+		arrows:true,
+		pauseOnHover:true,
+		prevArrow:false,
+		nextArrow:false
+	});
+
+$('.topmenu > ul').hover(function(){
+	$('.topmenu > ul').css("height","300px");
+	$('.topmenu > ul').css("background","#fff");
+	$('.topmenu > ul > li').css("color", "#222");
+	$('.slidebar').css("display","block");
+	
+$('.topmenu > ul > #menuborder').hover(function(){
+	$(this).css("border-bottom", "5px solid #36f");
+},function(){
+	$(this).css("border-bottom", "none");
+});
+
+$(".slidebar > li > a").hover(function(){
+	$(this).css("background", "#e6e6e6");
+	$(this).css("color", "#36f");
+	}, function(){
+	$(this).css("color", "#222");
+	$(this).css("background", "none");
+});
+
+}, function(){
+	$(".topmenu > ul").css("background", "transparent")
+	$('.topmenu > ul > li').css("color", "#fff");
+	$('.slidebar').css("display","none");
+	$('.topmenu > ul').css("height","100px");
+});
+
+function loginPage(){
+	location.href = "login.html";
+}
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="fullPage.js-2.9.7/jquery.fullPage.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
